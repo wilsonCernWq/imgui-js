@@ -26,7 +26,7 @@ global["fetch"] = fetch;
 
 process.chdir(__dirname);
 
-module.require("@flyover/system");
+module.require("../build/system.js");
 
 module.require("./system.config.js");
 
