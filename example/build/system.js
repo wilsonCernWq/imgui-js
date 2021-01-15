@@ -286,7 +286,7 @@ class SystemLoader {
                 }
                 case "command": {
                     const filename = require("url").fileURLToPath(url);
-                    return yield require("fs/promises").readFile(filename, "utf-8");
+                    return yield require("fs").promises.readFile(filename, "utf-8");
                 }
             }
         });

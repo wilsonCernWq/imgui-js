@@ -303,7 +303,7 @@ class SystemLoader {
       }
       case "command": {
         const filename: string = require("url").fileURLToPath(url);
-        return await require("fs/promises").readFile(filename, "utf-8");
+        return await require("fs").promises.readFile(filename, "utf-8");
       }
     }
   }
